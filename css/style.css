@@ -1,0 +1,403 @@
+/* font-family: 'Bree Serif', serif;
+
+font-family: 'Open Sans', sans-serif; */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  background-color: #f1f1f1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: "Bree Serif", serif;
+  font-size: 2.5em;
+  margin-bottom: 3%;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 2%;
+}
+
+.container-fluid {
+  padding: 7% 15% 1%;
+}
+
+.row {
+  margin: 0;
+}
+
+/* navbar */
+/* navbar */
+/* navbar */
+
+.logo {
+  width: 3.5rem;
+  height: auto;
+}
+
+.navbar {
+  padding: 1% 15%;
+}
+
+.nav-item {
+  font-weight: bold;
+  padding-left: 50px;
+  color: white;
+}
+
+#title {
+  background-color: #f1f1f1;
+  background-image: radial-gradient(#333333 1px, transparent 1px),
+    radial-gradient(#333333 1px, #f1f1f1 1px);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+}
+
+/* tittle */
+/* tittle */
+/* tittle */
+
+.btn {
+  background-color: #333333;
+  margin-top: 5%;
+  font-weight: bold;
+}
+
+.btn:hover {
+  color: white;
+  background-color: black;
+}
+
+#banner h1 {
+  color: #333333;
+  font-size: 5.5em !important;
+  line-height: 100px !important;
+}
+
+#banner p {
+  position: relative;
+  top: 30px;
+}
+
+#heading {
+  padding: 10% 15% !important;
+}
+
+#title-image img {
+  height: 75%;
+  width: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#title-name {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 2%;
+}
+
+#title-name p {
+  font-size: 1.25em;
+  font-weight: bold;
+  opacity: 50%;
+}
+
+/* portfolio */
+/* portfolio */
+/* portfolio */
+
+.portfolio-image {
+  text-align: center;
+}
+
+#portfolio-list {
+  padding: 1% 10%;
+}
+
+#portfolio img {
+  margin-bottom: 30px;
+  width: 200px;
+  box-shadow: -4px -4px 4px 0 rgb(255, 255, 255),
+    4px 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+#portfolio img:hover {
+  margin-top: 4px;
+  margin-bottom: 26px;
+  width: 200px;
+  box-shadow: none;
+}
+
+/* Skills */
+/* Skills */
+/* Skills */
+
+.icon {
+  margin-bottom: 10px;
+}
+
+.skill {
+  text-align: center;
+}
+
+.skill-row {
+  margin-bottom: 10%;
+}
+
+.skill-text {
+  text-align: right;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.skill img {
+  width: 3em;
+  height: 3em;
+}
+
+/* about-me */
+/* about-me */
+/* about-me */
+
+/* courses */
+/* courses */
+/* courses */
+
+.profile-picture {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 12em;
+  width: 12em;
+}
+
+.school-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 6.5em;
+  width: 6.5em;
+}
+
+.course-row {
+  margin-bottom: 4%;
+}
+
+/* experience */
+/* experience */
+/* experience */
+
+.experience-row {
+  margin-bottom: 5%;
+}
+
+/* modal */
+/* modal */
+/* modal */
+
+.link-modal {
+  color: #333333;
+  text-decoration: underline;
+}
+
+.modal-body i {
+  margin: 10px;
+}
+
+.modal-content {
+  background-color: #f1f1f1;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+/* responsive website */
+/* responsive website */
+/* responsive website */
+
+/* mobile */
+/* mobile */
+/* mobile */
+@media (max-width: 525px) {
+  body {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.3em;
+    margin-bottom: 5%;
+  }
+
+  .container-fluid {
+    padding: 15% 15%;
+  }
+
+  /* navbar */
+  .logo {
+    width: 2rem;
+  }
+
+  /* banner */
+  .btn {
+    margin-top: 15%;
+    margin-bottom: 10%;
+    font-size: 17px;
+  }
+
+  #banner h1 {
+    font-size: 3.5em !important;
+    line-height: 60px !important;
+  }
+
+  #heading {
+    padding: 10% 15% !important;
+  }
+
+  #title-name p {
+    font-size: 1em;
+    top: 20px;
+  }
+
+  /* portfolio */
+  #portfolio img {
+    width: 150px;
+  }
+
+  #portfolio img:hover {
+    width: 150px;
+    box-shadow: none;
+  }
+
+  /* skills */
+  .skill {
+    margin-bottom: 10%;
+  }
+
+  .skill-row {
+    margin-bottom: 20%;
+  }
+
+  .skill-text {
+    text-align: center;
+  }
+
+  /* about me */
+  li {
+    text-align: justify;
+  }
+  #summary p {
+    text-align: justify;
+  }
+}
+
+/* tablet */
+/* tablet */
+/* tablet */
+@media (max-width: 868px) {
+  /* navbar */
+  .logo {
+    width: 2.5rem;
+  }
+
+  /* banner */
+  .btn {
+    font-size: 17px;
+  }
+
+  /* portfolio */
+  #portfolio img {
+    width: 150px;
+  }
+
+  #portfolio img:hover {
+    width: 150px;
+    box-shadow: none;
+  }
+
+  /* skills */
+  .skill {
+    margin-bottom: 7%;
+  }
+
+  .skill-row {
+    margin-bottom: 10%;
+  }
+
+  .skill-text {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.4em;
+    margin-bottom: 5%;
+  }
+
+  .nav-item {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .profile-picture {
+    position: static;
+    top: none;
+    left: none;
+    transform: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    height: 10em;
+    width: 10em;
+  }
+
+  .school-img {
+    display: none;
+  }
+
+  .experience-row {
+    margin-bottom: 0;
+  }
+
+  #experience .col-lg-6 {
+    margin-bottom: 20px;
+  }
+}
+
+/* laptop */
+/* laptop */
+/* laptop */
+@media (min-width: 525px) and (max-width: 1124px) {
+  /* banner */
+  #banner h1 {
+    font-size: 5.25em !important;
+  }
+
+  #portfolio img {
+    width: 175px;
+  }
+
+  /* portfolio */
+  #portfolio img:hover {
+    width: 175px;
+  }
+
+  .skill-text {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+}
