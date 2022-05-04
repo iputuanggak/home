@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- lottiefiles -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <link href="dist/output.css" rel="stylesheet" />
+    <title>Putu Angga | Personal Website</title>
+  </head>
+  <body class="font-poppins text-white bg-dark-putu">
+    <header
+      class="sticky top-0 z-50 place-content-center p-2 backdrop-blur-md bg-dark-putu/75"
+    >
+      <img src="/src/img/Logo.svg" alt="logo-image" class="m-auto" />
+    </header>
+
+    <main class="relative px-2 md:px-6 lg:px-20 xl:px-40">
+      <!-- Hero -->
+      <section id="hero">
+        <div
+          class="container w-full px-4 py-8 md:pl-6 md:pr-0 lg:pl-10 my-4 bg-gradient-to-br from-secondary-color to-primary-color rounded-tl-[3rem] rounded-br-[3rem]"
+        >
+          <!-- Hero-Gif -->
+          <div class="flex flex-wrap md:flex-row-reverse">
+            <div class="w-full md:w-1/2">
+              <lottie-player
+                src="https://assets4.lottiefiles.com/packages/lf20_iwpdtqaq.json"
+                background="transparent"
+                speed="1.25"
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+            <!-- Hero-text -->
+            <div class="w-full md:w-1/2">
+              <div class="my-4 lg:my-8">
+                <h6 class="text-center md:text-left text-base">
+                  I Putu Angga K
+                </h6>
+                <h1
+                  class="text-center md:text-left text-3xl md:text-3.5xl lg:text-4xl xl:text-6xl 2xl:text-7xl font-bold"
+                >
+                  Design Product by Research
+                </h1>
+              </div>
+              <!-- Button -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <button
+                  type="button"
+                  class="bg-primary-color hover:bg-hover-color hover:text-primary-color p-2 rounded-md text-center text-base"
+                >
+                  My Portfolio
+                </button>
+                <button
+                  type="button"
+                  class="hover:bg-hover-color hover:text-primary-color border-2 border-white p-2 rounded-md text-center text-base"
+                >
+                  Contact Me
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- portfolio -->
+      <section id="portfolio">
+        <!-- title -->
+        <div class="my-10">
+          <h2
+            class="text-center text-xl md:text-1.5xl lg:text-2xl xl:text-4xl 2xl:text-5xl font-bold"
+          >
+            My Portfolio
+          </h2>
+          <!-- list of portfolio -->
+          <!-- ui/ux -->
+          <div class="container w-full bg-surface-color px-4 py-4 md:pr-0 my-4 rounded-lg">
+            <div class="">
+              <h3 class="font-bold text-2xl">UI/UX</h3>
+              <p class="text-base">Design digital product Mobile aplication & Web Application based on User Research</p>
+            </div>
+            <div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
