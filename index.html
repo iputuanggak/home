@@ -19,6 +19,7 @@
     <link href="dist/output.css" rel="stylesheet" />
     <title>Putu Angga | Personal Website</title>
   </head>
+
   <body class="font-poppins text-white bg-dark-putu">
     <header
       class="sticky top-0 z-50 place-content-center p-2 backdrop-blur-md bg-dark-putu/75"
@@ -46,82 +47,62 @@
             <!-- Hero-text -->
             <div class="w-full md:w-1/2">
               <div class="my-4 lg:my-8">
-                <h6 class="text-center md:text-left text-sm xl:text-base">
-                  I Putu Angga K
-                </h6>
-                <h1
-                  class="text-center md:text-left text-3xl md:text-3.5xl lg:text-4xl xl:text-6xl 2xl:text-7xl font-bold"
-                >
+                <p class="text-center md:text-left">I Putu Angga K</p>
+                <h1 class="text-center md:text-left">
                   Design Product by Research
                 </h1>
               </div>
               <!-- Button -->
               <div class="grid md:grid-cols-2 gap-2">
-                <button
-                  type="button"
-                  class="bg-primary-color hover:bg-hover-color hover:text-primary-color p-2 rounded-md text-center text-sm xl:text-base"
-                >
-                  My Portfolio
-                </button>
-                <button
-                  type="button"
-                  class="hover:bg-hover-color hover:text-primary-color border-2 border-white p-2 rounded-md text-center text-sm xl:text-base"
-                >
-                  Contact Me
-                </button>
+                <button type="button" class="btn-filled"><p>My Portfolio</p></button>
+                <button type="button" class="btn-outline"><p>Contact Me</p></button>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <!-- portfolio -->
       <section id="portfolio">
         <!-- title -->
         <div class="my-10">
-          <h2
-            class="text-center text-xl md:text-1.5xl lg:text-2xl xl:text-4xl 2xl:text-5xl font-bold"
-          >
-            My Portfolio
-          </h2>
+          <h2 class="text-center">My Portfolio</h2>
           <!-- list of portfolio -->
           <!-- ui/ux -->
-          <div class="container bg-surface-color px-4 py-4 my-4 md:p-6 lg:px-10 rounded-lg md:flex md:space-x-7 lg:space-x-0">
+          <div class="portfolio-container">
             <!-- text -->
-            <div class="md:w-1/3 md:max-h-fit md:self-center">
-              <h3 class="font-bold text-2xl">UI/UX</h3>
-              <p class="text-sm xl:text-base my-4">
+            <div class="portfolio-text">
+              <h3>UI/UX</h3>
+              <p>
                 Design digital product Mobile aplication & Web Application based
                 on User Research
               </p>
-              <div class="hidden md:flex md:justify-between md:items-center ">
-                <button
-                  type="button"
-                  class="hover:bg-hover-color hover:text-primary-color border-2 border-white p-2 rounded-md text-center text-sm"
-                >
-                  See More
-                </button>
-                <img src="src/img/portfolio/Behance_logo 1.png" alt="Behance_logo" class="h-4 w-auto">
+              <div class="portfolio-seemore-mid">
+                <button type="button" class="btn-outline"><p>See More</p></button>
+                <img
+                  src="src/img/portfolio/Behance_logo 1.png"
+                  alt="Behance_logo"
+                  class="h-4 w-auto"
+                />
               </div>
             </div>
             <!-- portfolio Image -->
-            <div
-              class="flex overflow-x-auto -mx-4 md:mx-0 my-4 snap-x scroll-px-4 px-4 md:p-0 space-x-4 md:w-2/3 lg:justify-end"
-            >
-              <div class="flex-none box-border w-56 xl:w-5/12 h-auto snap-start">
-                <div class="relative rounded-lg overflow-hidden">
+            <div class="portfolio-list">
+              <div class="portfolio-item">
+                <div class="portfolio-image">
                   <img
                     src="src/img/portfolio/UIUX Image.png"
                     alt="ui-ux-image"
                   />
                   <div
-                    class="absolute bottom-0 bg-gradient-to-t from-black to-transparent w-full h-1/2 p-3"
+                    class="portfolio-image-overlay"
                   >
-                    <div class="relative w-full h-full">
-                      <p class="block absolute bottom-0 text-sm xl:text-base">
-                        Personal Finance Manager
-                      </p>
-                    </div>
                   </div>
+                </div>
+                <div class="portfolio-image-text">
+                  <p>
+                    Personal Finance Manager app
+                  </p>
                 </div>
               </div>
 
@@ -144,14 +125,68 @@
               </div>
             </div>
             <!-- see more button -->
-            <div class="flex justify-between items-center md:hidden">
+            <div class="portfolio-seemore-bottom">
               <button
                 type="button"
-                class="hover:bg-hover-color hover:text-primary-color border-2 border-white p-2 rounded-md text-center text-sm"
+                class="btn-outline"
               >
-                See More
+                <p>
+                  See More
+                </p> 
               </button>
-              <img src="src/img/portfolio/Behance_logo 1.png" alt="Behance_logo" class="h-4 w-auto">
+              <img
+                src="src/img/portfolio/Behance_logo 1.png"
+                alt="Behance_logo"
+                class="h-4 w-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skillset -->
+      <section>
+        <div class="container py-2 bg-surface-color my-4">
+          <h2
+            class="text-center text-xl md:text-1.5xl lg:text-2xl xl:text-4xl 2xl:text-5xl font-bold"
+          >
+            Skillset
+          </h2>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="w-full">
+            <h3 class="text-lg font-bold text-center">Research</h3>
+          </div>
+          <div class="flex overflow-x-auto space-x-4 px-4 -mx-4 my-2">
+            <div class="flex-none p-4 bg-surface-color w-26 rounded-md">
+              <img
+                src="src/img/skillset/research/interview.png"
+                alt="interview"
+                class="w-1/4 m-auto"
+              />
+              <div class="w-full">
+                <p class="text-sm text-center">Field research</p>
+              </div>
+            </div>
+            <div class="flex-none p-4 bg-surface-color w-26 rounded-md">
+              <img
+                src="src/img/skillset/research/interview.png"
+                alt="interview"
+                class="w-1/4 m-auto"
+              />
+              <div class="w-full">
+                <p class="text-sm text-center">User Interview</p>
+              </div>
+            </div>
+            <div class="flex-none p-4 bg-surface-color w-26 rounded-md">
+              <img
+                src="src/img/skillset/research/interview.png"
+                alt="interview"
+                class="w-1/4 m-auto"
+              />
+              <div class="w-full">
+                <p class="text-sm text-center">User Interview</p>
+              </div>
             </div>
           </div>
         </div>
