@@ -20,6 +20,18 @@
   }
 }
 
+.hamburger-active > span:nth-child(1) {
+  @apply -rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply rotate-45;
+}
+
 @layer components {
   .btn-filled {
     @apply bg-primary-color hover:bg-hover-color hover:text-primary-color p-2 rounded-md text-center;
@@ -38,12 +50,12 @@
   }
 
   .portfolio-seemore-mid {
-    @apply hidden md:flex md:justify-between md:items-center
+    @apply hidden md:flex md:justify-between md:items-center;
   }
 
   .portfolio-seemore-bottom {
-    @apply flex justify-between items-center md:hidden
-    }
+    @apply flex justify-between items-center md:hidden;
+  }
 
   .portfolio-list {
     @apply flex overflow-x-auto -mx-4 md:mx-0 snap-x scroll-px-4 px-4 md:p-0 space-x-4 md:w-2/3 md:justify-end md:self-center;
@@ -62,11 +74,11 @@
   }
 
   .skillset-container {
-    @apply flex flex-wrap md:flex-nowrap md:space-x-4
+    @apply flex flex-wrap md:flex-nowrap md:space-x-4;
   }
 
   .skillset-subtitle {
-    @apply w-full md:w-1/6 md:max-h-fit md:self-center
+    @apply w-full md:w-1/6 md:max-h-fit md:self-center;
   }
 
   .skillset-list {
@@ -78,6 +90,6 @@
   }
 
   .skillset-image {
-    @apply w-2/6 m-auto saturate-0 group-hover:saturate-100
+    @apply w-2/6 m-auto saturate-0 group-hover:saturate-100;
   }
 }
