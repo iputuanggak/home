@@ -28,12 +28,16 @@
 
   <body class="font-poppins text-white bg-dark-putu">
     <header
-      class="sticky top-0 z-50 place-content-center p-2 backdrop-blur-md bg-dark-putu/75"
+      class="sticky top-0 z-50 item-center py-3 px-3 md:px-6 lg:px-20 xl:px-40 backdrop-blur-md bg-dark-putu/75"
     >
-      <img src="/src/img/Logo.svg" alt="logo-image" class="m-auto" />
+      <div class="container">
+        <div class="flex item-center justify-between">
+          <img src="/src/img/Logo.svg" alt="logo-image" class="w-32 h-auto"/>
+        </div>
+      </div>
     </header>
 
-    <main class="relative px-3 md:px-6 lg:px-20 xl:px-40">
+    <main class="px-3 md:px-6 lg:px-20 xl:px-40">
       <!-- Hero -->
       <section id="hero" class="container">
         <div
@@ -233,7 +237,9 @@
                 />
               </div>
             </div>
-            <div class="px-4 md:px-6 pb-4 pt-16 lg:pt-0 lg:pl-0 lg:pr-8 2xl:pr-16 space-y-8">
+            <div
+              class="px-4 md:px-6 pb-4 pt-16 lg:pt-0 lg:pl-0 lg:pr-10 2xl:pr-16 space-y-8"
+            >
               <div class="space-y-4">
                 <h2 class="text-center lg:text-left">I Putu Angga K</h2>
                 <p class="text-justify">
@@ -244,7 +250,9 @@
                 </p>
               </div>
               <!-- Button -->
-              <div class="grid grid-cols-1 gap-2 md:inline-block lg:space-x-4">
+              <div
+                class="grid grid-cols-1 gap-2 md:inline-block md:space-x-2 lg:space-x-4"
+              >
                 <a
                   href="https://id.linkedin.com/in/i-putu-angga-k"
                   target="_blank"
