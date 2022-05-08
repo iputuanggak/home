@@ -17,13 +17,13 @@ navItemMenu.forEach((elem) => {
   });
 });
 
-navItem.forEach((elem) => {
-  elem.addEventListener("click", function(e){
-    e.preventDefault();
-    var hastag = this.getAttribute("href");
-    document.querySelector(hastag).scrollIntoView();
-  });
-});
+// navItem.forEach((elem) => {
+//   elem.addEventListener("click", function(e){
+//     e.preventDefault();
+//     var hastag = this.getAttribute("href");
+//     document.querySelector(hastag).scrollIntoView();
+//   });
+// });
 
 window.onscroll = () => {
   var current = "";
@@ -49,10 +49,10 @@ window.onscroll = () => {
   });
 };
 
-// document.querySelectorAll('header a').forEach(anchor => {
-//   anchor.addEventListener('click', function (e) {
-//       e.preventDefault();
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
 
-//       document.querySelector(this.getAttribute('href')).scrollIntoView();
-//   });
-// });
+      document.querySelector(this.getAttribute('href')).scrollIntoView();
+  });
+});
