@@ -4,7 +4,7 @@
 
 @layer base {
   h1 {
-    @apply text-3xl md:text-4xl xl:text-6xl 2xl:text-7xl font-bold;
+    @apply text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold;
   }
 
   h2 {
@@ -32,7 +32,15 @@
   @apply rotate-45;
 }
 
+.nav-link-active {
+  @apply underline decoration-primary-color decoration-double decoration-2;
+}
+
 @layer components {
+  .nav-link {
+    @apply inline-block p-3;
+  }
+
   .btn-filled {
     @apply bg-primary-color hover:bg-hover-color hover:text-primary-color p-2 rounded-md text-center;
   }
