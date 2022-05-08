@@ -11,9 +11,17 @@ hamburger.addEventListener("click", function () {
 
 
 navItemMenu.forEach((elem) => {
-  elem.addEventListener("click", function (e) {
+  elem.addEventListener("click", function(){
     hamburger.classList.toggle("hamburger-active");
-    navMenu.classList.toggle("hidden");    
+    navMenu.classList.toggle("hidden"); 
+  });
+});
+
+navItem.forEach((elem) => {
+  elem.addEventListener("click", function(e){
+    e.preventDefault();
+    var hastag = this.getAttribute("href");
+    document.querySelector(hastag).scrollIntoView();
   });
 });
 
@@ -41,11 +49,10 @@ window.onscroll = () => {
   });
 };
 
-document.querySelectorAll('header a').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-      e.preventDefault();
+// document.querySelectorAll('header a').forEach(anchor => {
+//   anchor.addEventListener('click', function (e) {
+//       e.preventDefault();
 
-      document.querySelector(this.getAttribute('href')).scrollIntoView();
-      console.log('history')
-  });
-});
+//       document.querySelector(this.getAttribute('href')).scrollIntoView();
+//   });
+// });
