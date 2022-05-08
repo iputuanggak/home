@@ -33,7 +33,7 @@
 }
 
 .nav-link-active {
-  @apply underline decoration-primary-color decoration-double decoration-2;
+  @apply underline decoration-double decoration-2;
 }
 
 @layer components {

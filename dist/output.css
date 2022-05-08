@@ -954,6 +954,10 @@ p {
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .inline {
   display: inline;
 }
@@ -994,6 +998,18 @@ p {
 
 .h-1 {
   height: 0.25rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-2 {
+  height: 0.5rem;
 }
 
 .w-32 {
@@ -1052,6 +1068,14 @@ p {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.place-content-center {
+  place-content: center;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .justify-between {
@@ -1150,13 +1174,26 @@ p {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
 
+.bg-gradient-to-t {
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
 .from-secondary-color {
   --tw-gradient-from: #B5179E;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(181 23 158 / 0));
 }
 
+.from-primary-color {
+  --tw-gradient-from: #3F37C9;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(63 55 201 / 0));
+}
+
 .to-primary-color {
   --tw-gradient-to: #3F37C9;
+}
+
+.to-transparent {
+  --tw-gradient-to: transparent;
 }
 
 .py-2 {
@@ -1184,6 +1221,16 @@ p {
   padding-right: 0.5rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .pt-32 {
   padding-top: 8rem;
 }
@@ -1206,6 +1253,10 @@ p {
 
 .text-justify {
   text-align: justify;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .font-poppins {
@@ -1273,8 +1324,6 @@ p {
 .nav-link-active {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  -webkit-text-decoration-color: #3F37C9;
-          text-decoration-color: #3F37C9;
   -webkit-text-decoration-style: double;
           text-decoration-style: double;
   text-decoration-thickness: 2px;

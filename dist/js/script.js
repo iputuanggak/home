@@ -9,10 +9,11 @@ hamburger.addEventListener("click", function () {
   navMenu.classList.toggle("hidden");
 });
 
+
 navItemMenu.forEach((elem) => {
-  elem.addEventListener("click", function () {
+  elem.addEventListener("click", function (e) {
     hamburger.classList.toggle("hamburger-active");
-    navMenu.classList.toggle("hidden");
+    navMenu.classList.toggle("hidden");    
   });
 });
 
@@ -39,3 +40,12 @@ window.onscroll = () => {
     }
   });
 };
+
+document.querySelectorAll('header a').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView();
+      console.log('history')
+  });
+});
