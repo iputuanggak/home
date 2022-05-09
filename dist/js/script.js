@@ -32,9 +32,8 @@ window.onscroll = () => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
 
-    if (pageYOffset >= sectionTop - sectionHeight / 2) {
+    if (scrollY >= sectionTop - sectionHeight/2) {
       current = section.getAttribute("id");
-      console.log(current);
     }
   });
 

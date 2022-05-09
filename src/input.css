@@ -94,7 +94,7 @@
   }
 
   .skillset-item {
-    @apply flex-none lg:flex-1 p-2 bg-surface-color box-border w-36 h-fit rounded-md space-y-2;
+    @apply flex-none lg:flex-1 px-2 py-4 bg-surface-color box-border w-36 h-fit rounded-md space-y-2;
   }
 
   .skillset-image {
