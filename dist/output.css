@@ -1100,10 +1100,6 @@ p {
   align-self: center;
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
-
 .scroll-smooth {
   scroll-behavior: smooth;
 }
@@ -1179,14 +1175,14 @@ p {
   padding-right: 0.75rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .px-2 {
@@ -1199,12 +1195,20 @@ p {
   padding-bottom: 1rem;
 }
 
-.pt-32 {
-  padding-top: 8rem;
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
 }
 
 .pb-8 {
   padding-bottom: 2rem;
+}
+
+.pt-32 {
+  padding-top: 8rem;
 }
 
 .pb-4 {
@@ -1213,10 +1217,6 @@ p {
 
 .pt-16 {
   padding-top: 4rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
 }
 
 .text-center {
@@ -1319,10 +1319,6 @@ p {
     margin-bottom: 0px;
   }
 
-  .md\:mb-16 {
-    margin-bottom: 4rem;
-  }
-
   .md\:block {
     display: block;
   }
@@ -1387,20 +1383,12 @@ p {
     padding-right: 0px;
   }
 
-  .md\:pb-16 {
-    padding-bottom: 4rem;
-  }
-
-  .md\:pt-8 {
-    padding-top: 2rem;
-  }
-
   .md\:pt-16 {
     padding-top: 4rem;
   }
 
-  .md\:pt-0 {
-    padding-top: 0px;
+  .md\:pb-16 {
+    padding-bottom: 4rem;
   }
 
   .md\:text-left {
@@ -1413,10 +1401,6 @@ p {
 }
 
 @media (min-width: 1024px) {
-  .lg\:mb-64 {
-    margin-bottom: 16rem;
-  }
-
   .lg\:block {
     display: block;
   }
@@ -1491,10 +1475,6 @@ p {
 
   .lg\:pr-10 {
     padding-right: 2.5rem;
-  }
-
-  .lg\:pb-32 {
-    padding-bottom: 8rem;
   }
 
   .lg\:text-left {
